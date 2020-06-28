@@ -101,7 +101,7 @@ elif [ -f /usr/bin/rpm ]
     echo " * Download do Kaspersky Endpoint"
     wget -q -c -O $dic_temp'KES.rpm' -P $dic_temp $link_kes_rpm 
     echo " * Instalando Kaspersky Endpoint"
-    rpm- ivh $dic_temp'KES.rpm' >> $dic_temp/inst_kesl.log
+    rpm -ivh $dic_temp'KES.rpm' >> $dic_temp/inst_kesl.log
 fi
 echo " * Instação do Kaspersky Endpoint completa"
 echo " * Gerando arquivo de configuração"
