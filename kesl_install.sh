@@ -8,8 +8,8 @@ echo "###################################MICROHARD_V_1.0##"
 klna=/opt/kaspersky/klnagent/bin/
 kes=/opt/kaspersky/kesl/bin/
 dic_temp=/tmp/kaslinux/
-link_kla_deb="http://kps.squadra.com.br:8060/dlpkg?id=15973506"
-link_kla_rpm="http://kps.squadra.com.br:8060/dlpkg?id=18734271"
+link_kla_deb="Site"
+link_kla_rpm="Site"
 link_kes_deb=https://products.s.kaspersky-labs.com/endpoints/keslinux10/11.1.0.3013/multilanguage-INT-11.1.0.3013/3330333430317c44454c7c31/kesl_11.1.0-3013_amd64.deb
 link_kes_rpm=https://products.s.kaspersky-labs.com/endpoints/keslinux10/11.1.0.3013/multilanguage-INT-11.1.0.3013/3331353036317c44454c7c31/kesl-11.1.0-3013.x86_64.rpm
 #Paramentros de Instalação Kaspersky Endpoint
