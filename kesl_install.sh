@@ -3,7 +3,7 @@ clear
 echo "####################################################"
 echo "# INSTALAÇÃO PROTEÇÃO KASPERSKY ENDPOINT FOR LINUX #"
 echo "###########OS: Debian/Ubuntu/CentOS Server##########"
-echo "www.microhard.com.br ##################### MH_V1.0##"
+echo "########################################## MH_V1.0##"
 ver="MH_V1.0"
 #DEFINIR PARAMETROS
 klna=/opt/kaspersky/klnagent/bin/
@@ -111,6 +111,4 @@ echo " * Configurando Kaspersky Endpoint"
 /opt/kaspersky/kesl/bin/kesl-setup.pl --autoinstall=$dic_temp'kesl_autoanswers.conf'
 echo " * Configurando Concluida"
 echo " * Instalação finalizada"
-#Desenvolvido por Lucas Matheus Oliveira Silva
-#Lucas Matheus - lucas.matheus@microhard.com.br
-#Suporte - atendimento@microhard.com.br
+#Desenvolvido por ZEROPROJ
