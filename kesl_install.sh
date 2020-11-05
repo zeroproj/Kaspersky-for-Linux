@@ -208,9 +208,7 @@ if [[ $P_01 = "-def" ]]; then
   echo " * $V_KLNAGENT_SSLPORT"
   read -p 'Deseja confirmar as alteraçoes(S\N): ' conx
   if [ $conx = "S" ] || [ $conx = "s" ]; then
-    Dir_def="$(pwd)$(echo $N_arq|sed 's/^.//g')"
-    Dir_def="$Dir_def"
-    #Dir_def=$(pwd)$(echo $N_arq|sed 's/^.//g')
+    Dir_def=$(pwd)$(echo $N_arq|sed 's/^.//g')
     #ServADM
     Serv_Antigo="KLNAGENT_SERVER="$KLNAGENT_SERVER
     Serv_Novo="KLNAGENT_SERVER="$srvl
