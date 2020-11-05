@@ -4,11 +4,10 @@ echo "##########################################################################
 echo "################# INSTALAÇÃO PROTEÇÃO KASPERSKY ENDPOINT ##################"
 echo "############## OS: Debian/Ubuntu/CentOS/Fedora/macOS Server ###############"
 echo "############################################################### ZP_V6.0 ###"
-#################################################
 #***********************************************#
 #Paramentros de Instalação Kaspersky Agente
 #################################################
-KLNAGENT_SERVER=IP.COM.BR
+KLNAGENT_SERVER=192.168.1.108
 #################################################
 KLNAGENT_PORT=14000
 KLNAGENT_SSLPORT=13000
@@ -456,22 +455,4 @@ echo -e "#######################################################################
       exit 0
   fi
 fi
-
-#Configurando Kaspersky
-#    if [ $pkg = "apt" ] || [ $pkg = "rpm" ] || [ $pkg = "dnf" ] || [ $pkg = "conf" ]; then
-#      echo " * Gerando arquivo de configuração Agente de Rede"
-#      touch $dic_temp'kesl_autoanswers.conf'
-#      echo -e "KLNAGENT_SERVER=$KLNAGENT_SERVER\nKLNAGENT_PORT=$KLNAGENT_PORT\nKLNAGENT_SSLPORT=$KLNAGENT_SSLPORT\nKLNAGENT_USESSL=$KLNAGENT_USESSL\nKLNAGENT_GW_MODE=$KLNAGENT_GW_MODE" >> $dic_temp'autoanswers.conf'
-#      echo " * Configurando Agente de Rede"
-#      /opt/kaspersky/klnagent64/lib/bin/setup/postinstall.pl --auto
-#      echo " * Agente de Rede Configurado"
-#      echo " * Gerando arquivo de configuração Endpoint"
-#      touch $dic_temp'kesl_autoanswers.conf'
-#      echo -e "EULA_AGREED=$EULA_AGREED\nPRIVACY_POLICY_AGREED=$PRIVACY_POLICY_AGREED\nUSE_KSN=$USE_KSN\nUPDATER_SOURCE=$UPDATER_SOURCE\nUPDATE_EXECUTE=$UPDATE_EXECUTE\nUSE_GUI=$USE_GUI\nIMPORT_SETTINGS=$IMPORT_SETTINGS\nADMIN_USER_IF_USE_GUI=$USER" >> $dic_temp'kesl_autoanswers.conf'
-#      echo " * Configurando Kaspersky Endpoint"
-#      /opt/kaspersky/kesl/bin/kesl-setup.pl --autoinstall=$dic_temp'kesl_autoanswers.conf'
-#      echo " * Endpoint Configurado"
-#      exit 0
-#    fi
-#fi
 #Desenvolvido por ZEROPROJ
